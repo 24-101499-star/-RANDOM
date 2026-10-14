@@ -9,47 +9,32 @@
 <body>
     <section>
         <img id="img" src="" alt="شعار المحل">
-        <!-- شلنا autoplay و muted من الفيديو والصوت عشان يشتغلوا مع الضغطة -->
-        <video id="myVideo" src="img/Shop_shutter_opening_with_bicyclist_20261013224444.mp4"></video>
-        <audio id="bg-music" src="" loop></audio>
+        <video id="myVideo" src="img/000.mp4" muted autoplay></video>
+        <audio id="bg-music" src="" autoplay loop></audio>
     </section>
 
     <script>
-        // اختيار صورة عشوائية
+   
         let images = ["img/1.png", "img/2.png", "img/3.png"];
         document.getElementById("img").src = images[Math.floor(Math.random() * images.length)];
 
-        // اختيار صوت عشوائي
-        let audioList = [
-            "img/Cairo Egypt street Ambient _ Ramadan month _ HQ موثرات صوتية عربية.mp3",
-            "img/Relaxing morning sounds ( Egypt ).mp3"
-        ];
-        let music = document.getElementById('bg-music');
-        music.src = audioList[Math.floor(Math.random() * audioList.length)];
+       let music = [ "img/Cairo Egypt street Ambient _ Ramadan month _ HQ موثرات صوتية عربية.mp3",
+            "img/Relaxing morning sounds ( Egypt ).mp3"]
+
+           document.getElementById("bg-music").src = music[Math.floor(Math.random() * music.length)];
         music.volume = 0.5;
 
-        let video = document.getElementById('myVideo');
+      
+         let video = ["img/Shop_shutter_opening_with_bicyclist_20261013224444.mp4","img/000.mp4"];
+         
 
-        // دالة للتشغيل عند الضغط في أي مكان بالشاشة
-        function playMedia() {
-            music.play().catch(error => {
-                console.log("تعذر تشغيل الصوت:", error);
-            });
+        video.play().catch(error => {
+           
+        });
 
-            video.play().catch(error => {
-                console.log("تعذر تشغيل الفيديو:", error);
-            });
-
-            // إزالة الحدث بعد أول ضغطة لكي لا يتكرر بلا داعٍ
-            window.removeEventListener('click', playMedia);
-            window.removeEventListener('touchstart', playMedia);
-        }
-
-        // تفعيل التشغيل بمجرد ضغطة في أي مكان بالصفحة
-        window.addEventListener('click', playMedia);
-        window.addEventListener('touchstart', playMedia);
-
-          let vide =[]
+        music.play().catch(error => {
+            
+        });
     </script>
 </body>
 </html>
