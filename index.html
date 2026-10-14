@@ -7,19 +7,24 @@
     <title>Document</title>
 </head>
 <section>
-     <img src="img/Gemini_Generated_Image_asgoj4asgoj4asgo 1.png" alt="">
+     <img id="img"
+      src="" alt="">
     <video id="myVideo" src="img/Shop_shutter_opening_with_bicyclist_20261013224444.mp4" muted autoplay></video>
 </section>
 
 <script>
     const video = document.getElementById('myVideo');
-
-  
    
+    let img =[ "img/1.png" ,"img/2.png"]
+
+    document.getElementById("img").src=img[Math.floor(Math.random() * img.length)]
 
     video.play().catch(error => {
        
     });
+
+
+    
 </script>
 </body>
 </html>
