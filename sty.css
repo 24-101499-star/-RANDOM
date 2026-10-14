@@ -20,7 +20,7 @@ img {
     width: 20%;
     animation: swingSign 3s ease-in-out infinite;
     transform-origin: top center; 
-    animation-delay: 11s;
+    animation-delay: 9s;
     opacity: 0;
 }
 
