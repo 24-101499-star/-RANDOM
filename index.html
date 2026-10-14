@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sty.css">
     <title>Document</title>
 </head>
-<body>
-    
+<section>
+  
+    <video id="myVideo" src="img/Shop_shutter_opening_with_bicyclist_20261013224444.mp4" muted autoplay></video>
+</section>
+
+<script>
+    const video = document.getElementById('myVideo');
+
+  
+    video.loop = true;
+
+    video.play().catch(error => {
+       
+    });
+</script>
 </body>
 </html>
