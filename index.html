@@ -9,7 +9,7 @@
 <body>
     <section>
         <img id="img" src="" alt="شعار المحل">
-        <video id="myVideo" src="" muted autoplay></video>
+        <video id="myVideo" src="img/000000000000.mp4" muted autoplay></video>
     
         <audio id="bg-music" loop></audio>
     </section>
@@ -25,7 +25,7 @@
         bgMusic.volume = 0.5; 
 
       
-        let video = ["img/Shop_shutter_opening_with_bicyclist_20261013224444.mp4", "img/000.mp4"];
+        let video = ["img/Shop_shutter_opening_with_bicyclist_20261013224444.mp4", "img/000.mp4","img/000000000000.mp4"];
         document.getElementById("myVideo").src = video[Math.floor(Math.random() * video.length)];
 
         function playAudio() {
